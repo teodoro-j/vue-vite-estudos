@@ -31,7 +31,10 @@
           <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/"><button class="btn_saiba">{{ more }}</button></a>
         </div> 
         <Button v-on:click='$event => cadastrar()' msg_buttton="Cadastrar"></Button>
-        <ModalTeste v-if="mostrarModal"/>
+        <ModalTeste 
+        v-if="mostrarModal"
+        @fecharModal= 'mostrarModal = false; btn_aqui = true'
+        />
         <button v-if="btn_aqui" @click='showModal()'>aqui</button>
       </div>
     </template>
