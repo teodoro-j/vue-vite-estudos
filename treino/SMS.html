@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <title>SMS</title>
+</head>
+<body>
+    <div class="container" id="change" onclick="ChangeFrase()">
+        <h1 id="title"> Welcome to SMS </h1>
+    </div>
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #252525;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+</style>
+
+<script>
+    function ChangeFrase(){
+        change.innerHTML = `<h1> João </h1>`;
+        change.style.backgroundColor = `rgb(0, 153, 255)`;
+    }
+</script>
