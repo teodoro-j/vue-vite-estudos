@@ -5,12 +5,17 @@
     </a>
   </div>
   <HelloWorld msg="Bem Vindo a SMS" />
-  <h2><slot name="subtitle"></slot></h2>
+  Quantidade de cliques é : 
+  <button @click="counter.incrementar()">clique</button> {{ counter.count }}
+
+
 </template>
 
 <script setup>
 import HelloWorld from './pages/HelloWorld.vue';
+import { useCounterStore } from './use/useCounter';
 
+const counter = useCounterStore();
 </script>
 
 <style scoped>l

@@ -47,6 +47,8 @@ const validar = () => {
         router.push('/');
     }, 1000)
 }
+
+
 </script>
 
 <style scoped>
